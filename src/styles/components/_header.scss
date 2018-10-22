@@ -1,0 +1,32 @@
+.header {
+    background: $off-black;
+    color: $white;
+    margin-bottom: $m-size; // MOBILE FIRST - this is for mobile
+    padding: $m-size 0;
+
+    // nested selector in SCSS (apply for every h1 inside a .header)
+    /* h1 {
+        color: red;
+    } */
+}
+
+// but nesting selectors inside other selectors can bring many specificity issues.
+// So it's better to use a BEM naming convention (block element modifier)
+
+.header__title {
+    font-size: $l-size;
+    margin: 0;
+}
+
+.header__subtitle {
+    color: $off-white;
+    font-size: $m-size;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (min-width: $desktop-breakpoint) { // This is for large screens >= 450px (MOBILE FIRST)
+    .header {
+        margin-bottom: $xl-size;
+    }
+}

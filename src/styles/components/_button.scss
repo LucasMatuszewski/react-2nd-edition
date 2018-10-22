@@ -1,0 +1,41 @@
+// Big Button
+.big-button {
+    background: $purple;
+    border: 0;
+    border-bottom: .6rem solid darken($purple, 10%); //Sass function darken(color, %)
+    color: $white;
+    font-weight: bold;
+    font-size: $l-size;
+    margin-bottom: $m-size; // MOBILE FIRST - this is for Mobile
+    padding: 2.4rem;
+    width: 100%;
+}
+
+// build in CSS3 pseudo-class for disabled element:disabled {}
+.big-button:disabled {
+    opacity: .5;
+}
+
+@media (min-width: $desktop-breakpoint) { // This is for large screens >= 450px (MOBILE FIRST)
+    .big-button {
+        margin-bottom: $xl-size;
+    }
+}
+
+// Button
+.button {
+    background: $purple;
+    border: 0;
+    border-bottom: .3rem solid darken($purple, 10%);
+    color: $white;
+    font-weight: 500;
+    padding: $s-size;
+}
+
+// BEM modifier (button element, which looks like link)
+.button--link {
+    background: none;
+    border: 0;
+    color: $off-white;
+    padding: 0;
+}

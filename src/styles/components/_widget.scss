@@ -1,0 +1,30 @@
+//Widget
+.widget {
+    background: $light-blue;
+    margin-bottom: $xl-size;
+}
+
+.widget__message { //we don't use it, because I used condition based text to H3, not in <p>
+    border-bottom: 1px solid lighten($light-blue, 10%); //we can use px when we wont thick line
+    color: $off-white;
+    margin: 0;
+    text-align: center;
+    padding: $l-size;
+}
+
+// Widget header
+.widget-header {
+    background: $blue;
+    color: $off-white;
+    //FLEXBOX (better then float: left/right)
+    display: flex; //everything inline left to right
+    justify-content: space-between; //tell Flexbox how to distribute a space between elements
+    // space-between - all space distributed only between elements (not on the left and right)
+    // space-around - space distributed between and on the left and right of elements
+    // flex-grow: 1; //take all available space (left after other elements). It will extend automatically.
+    padding: $m-size;
+}
+
+.widget-header__title {
+    margin: 0;
+}

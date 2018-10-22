@@ -1,0 +1,37 @@
+.add-option-error {
+  color: $off-white;
+  font-style: italic;
+  margin: $m-size 0 0 0;
+  padding: 0 $m-size;
+}
+
+.add-option {
+  display: flex; //automatically everything in Flexbox take the same hight!!!
+  flex-direction: column; //default is "row", for mobile we want "column" (stacking top to bottom)
+  // MOBILE FIRST (here is mobile style)
+  padding: $m-size;
+}
+
+.add-option__input {
+  background: $dark-blue;
+  border: 0;
+  border-bottom: .3rem solid darken($dark-blue, 10%);
+  color: $white;
+  flex-grow: 1; //take all available space (left after other elements). It will extend automatically.
+  // margin-right: 0; //on mobile use no margin-right (we can delete it, because we use RESET CSS and it is 0 by default)
+  margin-bottom: $s-size; //use bottom margin only on mobile
+  padding: $s-size;
+}
+
+//css feature, not Sass. @media (CONDITION)
+// MOBILE FIRST - default styles are for mobile. In @media we set styles for bigger screens:
+@media (min-width: $desktop-breakpoint) { // use it for width >= 45rem = 450 px ($desktop-breakpoint value)
+  .add-option {
+    flex-direction: row; // for large devices left to right (inline)
+  }
+
+  .add-option__input {
+    margin-bottom: 0; //we have to use it to overlay value for mobile (which is default)
+    margin-right: $s-size; // for large devices use right margin
+  }
+}

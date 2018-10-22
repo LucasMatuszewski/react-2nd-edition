@@ -2,7 +2,7 @@
 https://www.udemy.com/react-2nd-edition/
 (I did it in june 2018, but stopped on Firebase -> I use MongoDB)
 
-/******************************************
+
 ##REACT and REACT-DOM - INSTALL & IMPORT *
  ******************************************
  * Previously we had React and React-dom added in HTML <script /> as CDN links.
@@ -20,10 +20,10 @@ https://www.udemy.com/react-2nd-edition/
  * 
  * After bundling the bundle.js file have 933kB... because it install Development Tools by default (env = development).
  * We have to set env = production, and minify / uglify this file (uglify will remove all React Dev Tools )
- */
 
 
-/***********************************************************************
+
+
 ##SCSS - CSS extension language / PREPROCESSOR / CSS Processing Tool *
  * *******************************************************************
  * SASS / SCSS = CSS with superpowers. Most popular, mature, stable and powerful.

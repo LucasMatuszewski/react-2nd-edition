@@ -3,7 +3,7 @@ https://www.udemy.com/react-2nd-edition/
 (I did it in june 2018, but stopped on Firebase -> I use MongoDB)
 
 
-##REACT and REACT-DOM - INSTALL & IMPORT *
+## REACT and REACT-DOM - INSTALL & IMPORT *
  ******************************************
  * Previously we had React and React-dom added in HTML <script /> as CDN links.
  * Now we will instal, import and bundle it with Webpack:
@@ -24,7 +24,7 @@ https://www.udemy.com/react-2nd-edition/
 
 
 
-##SCSS - CSS extension language / PREPROCESSOR / CSS Processing Tool *
+## SCSS - CSS extension language / PREPROCESSOR / CSS Processing Tool *
  * *******************************************************************
  * SASS / SCSS = CSS with superpowers. Most popular, mature, stable and powerful.
  * 
@@ -62,7 +62,7 @@ https://www.udemy.com/react-2nd-edition/
  * 
  * 
  * ************************
-##SETTING UP WebPack:   *
+## SETTING UP WebPack:   *
  * **********************
  * 
  * 1. install loaders:
@@ -94,14 +94,14 @@ https://www.udemy.com/react-2nd-edition/
 
 
 /*****************************************************
-##SPA + SEO = SSR (Server Side Rendering)
+## SPA + SEO = SSR (Server Side Rendering)
  * Tutorial: https://blog.digitalkwarts.com/server-side-rendering-with-reactjs-react-router-v4-react-helmet-and-css-modules/
  https://medium.com/superhighfives/an-almost-static-stack-6df0a2791319
  ******************************************************/
 
 
 /******************************************
-##POPULARITY OF FRONT-END TECHNOLOGIES: *
+## POPULARITY OF FRONT-END TECHNOLOGIES: *
  * **************************************
  * Google Trends averages 2017/2018: SASS = 65%, SCSS = 51%, LESS = 35%
  * 
@@ -132,7 +132,7 @@ https://www.udemy.com/react-2nd-edition/
 
 
 /*******************
-##CHILDREN PROPS *
+## CHILDREN PROPS *
  ******************
  * How to pass JSX or CHILDREN to component and use it inside component:
  * 
@@ -183,7 +183,7 @@ https://www.udemy.com/react-2nd-edition/
  */
 
 /***************************************
-##THIRD-PARTY Components / Libraries *
+## THIRD-PARTY Components / Libraries *
  *************************************
  * DON'T REPEAT OTHERS !!!
  * Before writhing own functionality, search if somebody created similar yet. You can use it for free!
@@ -204,7 +204,7 @@ https://www.udemy.com/react-2nd-edition/
 
 
 //////////////////////////
-##PLUGIN: babel-plugin-transform-class-properties
+## PLUGIN: babel-plugin-transform-class-properties
 ////////////////////////
 // Ads new, easier syntax for defining Statefull Class Components, without constructor()
 // 1. npm install babel-plugin-transform-class-properties -D
@@ -246,7 +246,7 @@ console.log(newGetGreeting()); // Works the same :)
 
 
 /**
-##PROGRESSIVE WEB APPLICATION: Service Workers
+## PROGRESSIVE WEB APPLICATION: Service Workers
  * Google promotes PWA apps, which works similar to native mobile apps.
  * With webpack we can easily add Workbox (google project) to our app.
  * Our app will use Service Workers to keep functioning while offline (like native mobile apps)!!!
